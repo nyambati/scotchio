@@ -247,7 +247,7 @@ If you visit the browser and refresh, you will still see `Hello, world` on the s
  Refresh the page again and  poof! we have our menu bar laid out beautifully.
  ![](https://cdn.scotch.io/896/HZP76SmwT8maZJqACE3F_Screen%20Shot%202016-06-04%20at%2016.51.43.png)
 
- Wow! How did that happen? Let me explain, when angular bootstraps the app, it will read the Dom element `<menu-bar> and maps it to our component `menuBar``. Therefore, whenever angular encounters this element it will render out component  for us. That's smart bro!  I know right?
+ Wow! How did that happen? Let me explain, when angular bootstraps the app, it will read the Dom element `<menu-bar>` and maps it to our component `menuBar``. Therefore, whenever angular encounters this element it will render out component  for us. That's smart bro!  I know right?
 
 Okay! Now that we have created our navigation component, let's add one more. We need a table that has names of users, the country of origin and the city they reside in. We could use a controller and populate the data in our view, but if we ever require this data in a different view we would have to repeat the same code again. To fix this we create another component.
 
