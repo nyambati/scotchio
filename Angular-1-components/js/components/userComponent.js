@@ -4,8 +4,11 @@
   const app = angular.module('app');
 
   app.component('userInfo', {
-    // load template
-    bindings: {},
+    // Pass name of the table through attribute name:
+    // <user-info name="myTableName"><user-info>
+    bindings: {
+      name: '<'
+    },
     templateUrl: '/js/components/userComponent.html',
     controller: function () {
       this.records = [{
@@ -25,6 +28,7 @@
         city: "Madrid",
         country: "Spain"
       }];
+
     }
   });
 })();
