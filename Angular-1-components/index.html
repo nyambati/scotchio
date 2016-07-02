@@ -9,11 +9,26 @@
   <!-- components -->
   <script src="js/components/appComponent.js"></script>
   <script src="js/components/userComponent.js"></script>
+  <script src="js/components/accordionComponent.js"></script>
+  <script src="js/components/accordionPanelComponent.js"></script>
 </head>
 
 <body>
   <menu-bar brand="'Brand'"></menu-bar>
   <user-info name="'Users Table'"></user-info>
+  <div class="container">
+    <!--The main accordion component-->
+    <accordion>
+      <!--The first panel with heading 1-->
+      <accordion-panel heading="heading 1">
+        This a panel
+      </accordion-panel>
+      <!--The secoind panel with heading 2-->
+      <accordion-panel heading="Heading 2">
+        this is another panel
+      </accordion-panel>
+    </accordion>
+  </div>
 </body>
 
 </html>
