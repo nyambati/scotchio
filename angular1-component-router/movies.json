@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "title": "Star Wars",
+    "rating": 5,
+    "length": 120,
+    "image": "http://img08.deviantart.net/9700/i/2015/349/0/1/star_wars_the_force_awakens_poster_by_dan_zhbanov-d9k7hgz.jpg"
+}, {
+    "id": 2,
+    "title": "Star Trek",
+    "rating": 4,
+    "length": 90,
+    "image": "http://www.movienewz.com/img/films/star_trek_movie_poster_2.jpg"
+}, {
+    "id": 3,
+    "title": "Avatar",
+    "rating": 4,
+    "length": 125,
+    "image": "https://isetechnology.files.wordpress.com/2010/11/jamescameronavatarposter.jpg"
+}]

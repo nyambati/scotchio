@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-4" ng-repeat="movie in $ctrl.movies">
+    <div class="thumbnail">
+      <img ng-src="{{  movie.image }}" alt="Movie" style="height:500px;">
+      <div class="caption">
+        <a ng-link="['Details', {id: movie.id}]">
+          <h3>{{ movie.title }}</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="show-movie-details">
+  <ng-outlet></ng-outlet>
+</div>
