@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html en="us" ng-app="app" ng-strict-di>
+
+<head>
+  <title>Angular Lifecycle Hooks</title>
+  <link rel="stylesheet" href="lib/Materialize/dist/css/materialize.min.css">
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/Materialize/dist/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- components -->
+  <script src="js/components/onInitComponent.js"></script>
+  <script src="js/components/onChangesComponent.js"></script>
+  <script src="js/components/onDestroyComponent.js"></script>
+  <script src="js/components/postLinkComponent.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Lifecycle Hooks Example</a>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- $onInit hook -->
+    <on-init></on-init>
+    <!-- $onChanges hook -->
+    <div class="card ">
+      <div class="card-content">
+        <span class="card-title">$onChanges</span>
+        <div class="input-field col s6">
+          <input placeholder="Enter name here" type="text" ng-model="name">
+        </div>
+      </div>
+    </div>
+    <on-changes name="name"></on-changes>
+    <on-destroy></on-destroy>
+    <post-link></post-link>
+  </div>
+</body>
+
+</html>

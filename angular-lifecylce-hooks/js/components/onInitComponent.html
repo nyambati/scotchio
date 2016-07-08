@@ -1,0 +1,31 @@
+<div>
+  <div class="card ">
+    <div class="card-content">
+      <span class="card-title"> $onInit Hook</span>
+      <table class="bordered striped highlight">
+        <thead>
+          <tr>
+            <th data-field="name">Name</th>
+            <th data-field="username">username</th>
+            <th data-field="email">E-mail</th>
+            <th data-field="city">city</th>
+            <th data-field="Phone">Phone Number</th>
+            <th data-field="website">website</th>
+            <th data-field="company">company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in $ctrl.users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.address.city }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.website }}</td>
+            <td>{{ user.company.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
