@@ -1,1 +1,19 @@
-{{ $ctrl.id }}
+<div class="panel panel-default" ng-cloak>
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <th>
+        <td>Title</td>
+        <td>Length</td>
+        <td>Rating</td>
+      </th>
+      <tr>
+        <td>{{ $ctrl.movie.id }}</td>
+        <td>{{ $ctrl.movie.title }}</td>
+        <td>{{ $ctrl.movie.length }}</td>
+        <td>{{ $ctrl.movie.rating }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

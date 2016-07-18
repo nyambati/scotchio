@@ -18,7 +18,7 @@
 
     function findMovie(id) {
         for (var movie of movies) {
-            if (movie.id === id) {
+            if (movie.id === parseInt(id)) {
                 return movie;
             }
         }
@@ -30,6 +30,7 @@
 
     app.get('/api/movies/:id', function (req, res) {
         var movie = findMovie(req.params.id);
+
         res.json(movie);
     });
 

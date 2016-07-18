@@ -1,7 +1,0 @@
-{
-  "strict": true,
-  "esnext": true,
-  "predef": [
-    "angular"
-  ]
-}

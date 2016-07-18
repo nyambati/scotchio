@@ -7,8 +7,9 @@
         templateUrl: '/js/components/appComponent.html',
         $routeConfig: [
             { path: '/', component: 'jumboTron', name: 'Home', useAsDefault: true },
-            { path: '/movies', component: 'movieList', name: 'MovieList' },
-            { path: '/about', component: 'about', name: 'About' }
+            { path: '/movies/...', component: 'movieList', name: 'Movies' },
+            { path: '/about', component: 'about', name: 'About' },
+            { path: '/**', redirectTo: ['Home'] }
         ]
     });
 

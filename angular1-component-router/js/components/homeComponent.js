@@ -24,7 +24,7 @@
         self.button = 'see movies';
 
         self.goTo = function () {
-            self.$router.navigate(['MovieList']);
+            self.$router.navigate(['Movies', 'Details', { id: 1 }]);
         };
 
     }
