@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- start of navbar-->
+  <nav class="navbar navbar-inverse" class="container-fluid">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Movie App</a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a ng-link="['Home']">Home</a>
+        </li>
+        <li>
+          <a ng-link="['Movies', 'Details', {id: 1}]">Movies</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+</div>
+<div class="container">
+  <ng-outlet></ng-outlet>
+</div>
